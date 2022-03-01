@@ -94,16 +94,20 @@ namespace OptimalTreeSearch
             {
                 optimalWeight = 0.0;               
                 FillPoints();
-                pointDistanceX = DrawPanel.Width / 6;
-                pointDistanceY = (DrawPanel.Height - 10) / points.Count;
+                
                 labels.Clear();
                 DrawPanel.Controls.Clear();
                 g.Clear(Color.Silver);
+
                 OptimalTreeBuilder optimalTree = new OptimalTreeBuilder(points);
-                //optimalTree.KnutAlgorithm();
                 points = optimalTree.points;
-                BinaryTree bTree = new BinaryTree(optimalTree);      
-                DrawTree(bTree, DrawPanel.Size.Width / 2, 10, 1);               
+                BinaryTree bTree = new BinaryTree(optimalTree);
+
+                pointDistanceX = DrawPanel.Width / 6;
+                pointDistanceY = (DrawPanel.Height - 10) / bTree.GetHeight(bTree, 1);
+
+                DrawTree(bTree, DrawPanel.Size.Width / 2, 10, 1);        
+                
                 lblOptimalWeight.Text = "Взвешенный вес дерева: " + (optimalWeight).ToString();              
             }
             else

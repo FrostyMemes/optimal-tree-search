@@ -44,6 +44,7 @@ namespace OptimalTreeSearch
             this.btnClear = new System.Windows.Forms.Button();
             this.openTXTfile = new System.Windows.Forms.OpenFileDialog();
             this.lblOptimalWeight = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPoints)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +179,21 @@ namespace OptimalTreeSearch
             this.lblOptimalWeight.TabIndex = 11;
             this.lblOptimalWeight.Text = "Взвешенный вес дерева:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(914, 370);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "label1";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 480);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblOptimalWeight);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnBuildTree);
@@ -221,6 +232,7 @@ namespace OptimalTreeSearch
         private System.Windows.Forms.Label lblOptimalWeight;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnKey;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnWeight;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -5,7 +5,7 @@ namespace OptimalTreeSearch
     {
         private OptimalTreeBuilder builder; //Конструктор ДОП, из которого берется информация для построения  бинарного дерева
 
-        public BinaryTree LeftTree; //Левый предок
+        public BinaryTree LeftTree;     //Левый предок
         public BinaryTree RightTree;    //Правый предок
         
         public Point point; //Значение вершины
@@ -37,6 +37,21 @@ namespace OptimalTreeSearch
                 LeftTree = new BinaryTree(rowTree, iPoint - 1, builder);
             if (iPoint != colTree)
                 RightTree = new BinaryTree(iPoint, colTree, builder);
+        }
+
+        public int GetHeight(BinaryTree node, int value)
+        {
+            int leftTreeHeight;
+            int rightTreeHeight;
+            
+            if (node == null)
+                return (value-1);
+
+            leftTreeHeight  = GetHeight(node.LeftTree, value + 1);
+            rightTreeHeight = GetHeight(node.RightTree, value + 1);
+
+            if (leftTreeHeight > rightTreeHeight) return leftTreeHeight;
+            else return rightTreeHeight;
         }
     }
 }

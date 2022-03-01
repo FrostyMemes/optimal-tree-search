@@ -6,12 +6,12 @@ namespace OptimalTreeSearch
     class OptimalTreeBuilder
     {
 
-        private double[,] weights; //Матрица весов поддеревьев
-        private double[,] p_weight; //Матрица взвешенных весов поддеревьев
+        private double[,] weights;          //Матрица весов поддеревьев
+        private double[,] p_weight;         //Матрица взвешенных весов поддеревьев
 
         public List<Point> points { get; }  //Список вершин будущего ДОП
-        public int size { get; }    //Размерность матриц для работы с вершинами
-        public int[,] Tree { get; } //Дерево индексов вершин ДОП
+        public int size { get; }            //Размерность матриц для работы с вершинами
+        public int[,] Tree { get; }         //Дерево индексов вершин ДОП
 
         public long ProcTime;
 
@@ -90,7 +90,7 @@ namespace OptimalTreeSearch
             return P_min;
         }
 
-        //Сортировка списка вершин позначению веса
+        //Сортировка списка вершин по значению веса
         private void sort()
         {
             for (var i = 1; i < points.Count; i++)
