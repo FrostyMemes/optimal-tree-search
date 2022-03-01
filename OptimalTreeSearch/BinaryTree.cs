@@ -50,8 +50,7 @@ namespace OptimalTreeSearch
             leftTreeHeight  = GetHeight(node.LeftTree, value + 1);
             rightTreeHeight = GetHeight(node.RightTree, value + 1);
 
-            if (leftTreeHeight > rightTreeHeight) return leftTreeHeight;
-            else return rightTreeHeight;
+            return (leftTreeHeight > rightTreeHeight) ? leftTreeHeight : rightTreeHeight;
         }
     }
 }
