@@ -178,7 +178,7 @@ namespace OptimalTreeSearch
            
         }
         
-        //Метод рисования дерева
+        //Метод отрисовки дерева
         private void DrawTree(BinaryTree binTree, int x, int y, int level)
         {
             int x_next;

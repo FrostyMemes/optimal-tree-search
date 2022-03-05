@@ -29,6 +29,7 @@ namespace OptimalTreeSearch
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnFile = new System.Windows.Forms.Button();
             this.DrawPanel = new System.Windows.Forms.Panel();
             this.lblTreeWeight = new System.Windows.Forms.Label();
@@ -49,7 +50,8 @@ namespace OptimalTreeSearch
             // 
             // btnFile
             // 
-            this.btnFile.Location = new System.Drawing.Point(882, 171);
+            this.btnFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFile.Location = new System.Drawing.Point(971, 171);
             this.btnFile.Name = "btnFile";
             this.btnFile.Size = new System.Drawing.Size(140, 66);
             this.btnFile.TabIndex = 0;
@@ -59,16 +61,20 @@ namespace OptimalTreeSearch
             // 
             // DrawPanel
             // 
+            this.DrawPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DrawPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DrawPanel.Location = new System.Drawing.Point(12, 12);
             this.DrawPanel.Name = "DrawPanel";
-            this.DrawPanel.Size = new System.Drawing.Size(569, 426);
+            this.DrawPanel.Size = new System.Drawing.Size(658, 505);
             this.DrawPanel.TabIndex = 1;
             // 
             // lblTreeWeight
             // 
+            this.lblTreeWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTreeWeight.AutoSize = true;
-            this.lblTreeWeight.Location = new System.Drawing.Point(587, 395);
+            this.lblTreeWeight.Location = new System.Drawing.Point(676, 478);
             this.lblTreeWeight.Name = "lblTreeWeight";
             this.lblTreeWeight.Size = new System.Drawing.Size(68, 13);
             this.lblTreeWeight.TabIndex = 2;
@@ -77,15 +83,17 @@ namespace OptimalTreeSearch
             // dgvPoints
             // 
             this.dgvPoints.AllowUserToAddRows = false;
+            this.dgvPoints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPoints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPoints.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmnKey,
             this.clmnWeight});
-            this.dgvPoints.Location = new System.Drawing.Point(590, 12);
+            this.dgvPoints.Location = new System.Drawing.Point(679, 12);
             this.dgvPoints.Name = "dgvPoints";
             this.dgvPoints.RowHeadersVisible = false;
             this.dgvPoints.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPoints.Size = new System.Drawing.Size(283, 380);
+            this.dgvPoints.Size = new System.Drawing.Size(283, 458);
             this.dgvPoints.TabIndex = 3;
             this.dgvPoints.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPoints_CellMouseDoubleClick);
             // 
@@ -104,7 +112,8 @@ namespace OptimalTreeSearch
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(882, 99);
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Location = new System.Drawing.Point(971, 99);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(140, 66);
             this.btnAdd.TabIndex = 4;
@@ -114,7 +123,8 @@ namespace OptimalTreeSearch
             // 
             // txtWeight
             // 
-            this.txtWeight.Location = new System.Drawing.Point(882, 73);
+            this.txtWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight.Location = new System.Drawing.Point(971, 73);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(140, 20);
             this.txtWeight.TabIndex = 5;
@@ -122,15 +132,17 @@ namespace OptimalTreeSearch
             // 
             // txtKey
             // 
-            this.txtKey.Location = new System.Drawing.Point(882, 28);
+            this.txtKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKey.Location = new System.Drawing.Point(971, 28);
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(140, 20);
             this.txtKey.TabIndex = 6;
             // 
             // lblKey
             // 
+            this.lblKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKey.AutoSize = true;
-            this.lblKey.Location = new System.Drawing.Point(879, 12);
+            this.lblKey.Location = new System.Drawing.Point(968, 12);
             this.lblKey.Name = "lblKey";
             this.lblKey.Size = new System.Drawing.Size(36, 13);
             this.lblKey.TabIndex = 7;
@@ -138,8 +150,9 @@ namespace OptimalTreeSearch
             // 
             // lblWeight
             // 
+            this.lblWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWeight.AutoSize = true;
-            this.lblWeight.Location = new System.Drawing.Point(879, 57);
+            this.lblWeight.Location = new System.Drawing.Point(968, 57);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(29, 13);
             this.lblWeight.TabIndex = 8;
@@ -147,7 +160,8 @@ namespace OptimalTreeSearch
             // 
             // btnBuildTree
             // 
-            this.btnBuildTree.Location = new System.Drawing.Point(587, 415);
+            this.btnBuildTree.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuildTree.Location = new System.Drawing.Point(676, 498);
             this.btnBuildTree.Name = "btnBuildTree";
             this.btnBuildTree.Size = new System.Drawing.Size(286, 23);
             this.btnBuildTree.TabIndex = 9;
@@ -157,7 +171,8 @@ namespace OptimalTreeSearch
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(882, 243);
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Location = new System.Drawing.Point(971, 243);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(140, 66);
             this.btnClear.TabIndex = 10;
@@ -171,8 +186,9 @@ namespace OptimalTreeSearch
             // 
             // lblOptimalWeight
             // 
+            this.lblOptimalWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblOptimalWeight.AutoSize = true;
-            this.lblOptimalWeight.Location = new System.Drawing.Point(12, 441);
+            this.lblOptimalWeight.Location = new System.Drawing.Point(12, 521);
             this.lblOptimalWeight.Name = "lblOptimalWeight";
             this.lblOptimalWeight.Size = new System.Drawing.Size(135, 13);
             this.lblOptimalWeight.TabIndex = 11;
@@ -182,7 +198,7 @@ namespace OptimalTreeSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 480);
+            this.ClientSize = new System.Drawing.Size(1128, 559);
             this.Controls.Add(this.lblOptimalWeight);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnBuildTree);
@@ -195,7 +211,10 @@ namespace OptimalTreeSearch
             this.Controls.Add(this.lblTreeWeight);
             this.Controls.Add(this.DrawPanel);
             this.Controls.Add(this.btnFile);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Дерево оптимального поиска";
             this.Load += new System.EventHandler(this.Main_Load);
             this.Shown += new System.EventHandler(this.Main_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPoints)).EndInit();
