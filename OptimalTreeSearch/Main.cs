@@ -183,8 +183,10 @@ namespace OptimalTreeSearch
         {
             int x_next;
             int y_next;
+
             optimalWeight += binTree.point.Weight * level;
             g.FillRectangle(Brushes.Red, x, y, POINT_SIZE, POINT_SIZE);
+
             Label lablePoint = new Label
             {
                 Text = "(" + binTree.point.Key + "; " + binTree.point.Weight + ")",
@@ -192,9 +194,11 @@ namespace OptimalTreeSearch
                 Font = new Font("Times New Roman", 7),
                 AutoSize = true
             };
+
             labels.Add(lablePoint);
             lablePoint.BackColor = Color.Transparent;
             DrawPanel.Controls.Add(lablePoint);
+
             if (binTree.LeftTree!=null)
             {
 
@@ -203,6 +207,7 @@ namespace OptimalTreeSearch
                 g.DrawLine(Pens.Black, x, y + POINT_SIZE, x_next + POINT_SIZE, y_next);
                 DrawTree(binTree.LeftTree, x_next, y_next, level + 1);
             }
+
             if (binTree.RightTree != null)
             {
                 x_next = x + (pointDistanceX / level);

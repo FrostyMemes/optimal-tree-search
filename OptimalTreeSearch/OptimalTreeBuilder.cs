@@ -13,16 +13,17 @@ namespace OptimalTreeSearch
         public int size { get; }            //Размерность матриц для работы с вершинами
         public int[,] Tree { get; }         //Дерево индексов вершин ДОП
 
-        public long ProcTime;
 
-        //Конструктор конструктора ДОП
+        //Конструктор ДОП
         public OptimalTreeBuilder(List<Point> points)
         {           
             this.points = points;
             size = points.Count;
+
             weights = new double[size, size];
             p_weight = new double[size, size];
             Tree = new int[size, size];
+
             KnutAlgorithm();
         }
         
