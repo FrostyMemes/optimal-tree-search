@@ -1,0 +1,10 @@
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\bin\Release\OptimalTreeSearch.exe.config
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\bin\Release\OptimalTreeSearch.exe
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\bin\Release\OptimalTreeSearch.pdb
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.csproj.AssemblyReference.cache
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.Main.resources
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.Properties.Resources.resources
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.csproj.GenerateResource.cache
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.csproj.CoreCompileInputs.cache
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.exe
+D:\Projects\C Sharp Projects\OptimalTreeSearch\OptimalTreeSearch\obj\Release\OptimalTreeSearch.pdb
